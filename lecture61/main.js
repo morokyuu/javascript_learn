@@ -10,8 +10,11 @@ btn.addEventListener('click', function(e){
     let inputBtext = inputB.value;
     let inputBName = inputB.getAttribute('name');
 
-    let showText = document.getElementById('showText');
+    let showTextA = document.getElementById('showTextA');
+    let showTextB = document.getElementById('showTextB');
+    let showTextAns = document.getElementById('showTextAns');
     showTextA.textContent = `name属性: ${inputAName}, 入力されたテキスト: ${inputAtext}`
     showTextB.textContent = `name属性: ${inputBName}, 入力されたテキスト: ${inputBtext}`
+    showTextAns.textContent = `${Number(inputAtext) + Number(inputBtext)}`
 
 }, false);
